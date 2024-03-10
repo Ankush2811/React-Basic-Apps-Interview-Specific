@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1>Multi Dropdown App</h1>
+      {/* 1st DD */}
       <select onChange={(e) => setSelectCountry(e.target.value)}>
         {countries.map((item, index) => {
           return (
@@ -21,6 +22,7 @@ function App() {
           );
         })}
       </select>
+      {/* 2nd DD */}
       <select>
         {countries[selectCountry]?.cities.map((item, index) => {
           return (
